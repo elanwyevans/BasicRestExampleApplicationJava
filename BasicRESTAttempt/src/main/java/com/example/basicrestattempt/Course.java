@@ -16,7 +16,7 @@ public class Course implements Serializable
 
     //must specify relationships
     //one degree type can have many courses
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "degreetype")
     private Degreetype degreetype;
 

@@ -21,7 +21,7 @@ public class Student implements Serializable
     private LocalDate dob;
 
     //many students can be on one course
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "course")
     private Course course;
 
